@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -33,29 +32,29 @@ export function Hero() {
     <section ref={root} className="pt-20 pb-8 sm:pt-28">
       <div className="mx-auto max-w-[720px] px-5 text-center sm:px-8 lg:px-12">
         <h1 className="hero-in font-[family-name:var(--font-jakarta)] text-[40px] font-semibold leading-[1.1] tracking-[-0.03em] sm:text-[56px]">
-          Restaurant POS,
+          A restaurant POS
           <br />
-          <span className="text-[#8bff00]">without the noise.</span>
+          <span className="text-[#8bff00]">that just works.</span>
         </h1>
         <p className="hero-in mx-auto mt-5 max-w-[480px] text-[16px] leading-7 text-white/55">
-          Billing, inventory, and ordering in one place. Built for cafes, QSRs, bars, and cloud kitchens.
+          Handle billing, stock, and orders from one system. Made for cafes, QSRs, bars, and cloud kitchens.
         </p>
-        <div className="hero-in mt-8 flex items-center justify-center gap-3">
+        <div className="hero-in mt-8 flex items-center justify-center">
           <DemoRequestButton label="Demo request" />
-          <Link href="/#product" className="btn-ghost">
-            See product
-          </Link>
         </div>
       </div>
 
-      <div className="hero-in mt-16 w-full px-5 sm:px-8 lg:px-12">
-        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-xl border border-white/[0.1] bg-[#0c0c0c]">
+      <div className="hero-in mt-16 w-full px-6 sm:px-10 lg:px-16">
+        <div className="relative h-auto w-full overflow-hidden">
           <Image
             src="/dashboard.png"
             alt="InnServe dashboard"
-            fill
+            width={1920}
+            height={1080}
             priority
-            className="object-cover object-top"
+            sizes="100vw"
+            unoptimized
+            className="mx-auto block h-auto w-full"
           />
         </div>
       </div>

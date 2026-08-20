@@ -88,7 +88,16 @@ export function Product() {
             </div>
             <div className="p-5">
               <p className="text-[12px] font-medium text-[#8bff00]">{item.step}</p>
-              <h3 className="mt-2 text-[18px] font-medium">{item.title}</h3>
+              <h3 className="mt-2 flex items-center gap-2 text-[18px] font-medium">
+                {item.step === "03" && (
+                  <svg viewBox="0 0 20 20" fill="none" className="h-4 w-4 text-[#8bff00]" aria-hidden>
+                    <rect x="2.5" y="4.5" width="15" height="11" rx="2" stroke="currentColor" strokeWidth="1.5" />
+                    <path d="M2.5 8.5h15" stroke="currentColor" strokeWidth="1.5" />
+                    <path d="M6 12h3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                  </svg>
+                )}
+                {item.title}
+              </h3>
               <p className="mt-2 text-[14px] leading-6 text-white/50">{item.text}</p>
             </div>
           </article>

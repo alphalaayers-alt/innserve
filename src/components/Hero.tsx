@@ -32,14 +32,14 @@ export function Hero() {
     <section ref={root} className="pt-20 pb-8 sm:pt-28">
       <div className="mx-auto max-w-[720px] px-5 text-center sm:px-8 lg:px-12">
         <h1 className="hero-in font-[family-name:var(--font-jakarta)] text-[40px] font-semibold leading-[1.1] tracking-[-0.03em] sm:text-[56px]">
-          A restaurant POS
+          A RESTAURANT POS
           <br />
-          <span className="text-[#8bff00]">that just works.</span>
+          <span className="text-[#8bff00]">THAT JUST WORKS.</span>
         </h1>
         <p className="hero-in mx-auto mt-5 max-w-[480px] text-[16px] leading-7 text-white/55">
           Handle billing, stock, and orders from one system. Made for cafes, QSRs, bars, and cloud kitchens.
         </p>
-        <div className="hero-in mt-8 flex items-center justify-center">
+        <div className="hero-in mt-8 flex items-center justify-center md:hidden">
           <DemoRequestButton label="Demo request" />
         </div>
       </div>
